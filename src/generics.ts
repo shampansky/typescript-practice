@@ -1,8 +1,19 @@
 // select element with a class of '.input' and make it HTMLInputElement
+const inputElement = document.querySelector<HTMLInputElement>('.input');
+
+inputElement?.value;
 
 // write a typed function that returns second element of a given array
+function getSecondElement<ArrayType>(arr: ArrayType[]) {
+  return arr[1];
+}
+
+const testNumArray = [3, true];
+getSecondElement(testNumArray); //?
 
 // create an empty Set of strings
+const typedSet = new Set<number>();
+typedSet.add(3);
 
 // create an empty Mao of string -> number
 
