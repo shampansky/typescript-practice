@@ -11,6 +11,15 @@ const newProject: ProjectInfo = {
 
 // newProject.id = 32;
 
+type ProjectInfoReadOnly = Readonly<ProjectInfo>;
+
+const savedProject: ProjectInfoReadOnly = {
+  id: 332,
+  name: 'Dewalt',
+};
+
+// savedProject.id = 3
+
 type immutableArray = readonly number[];
 
 // create readonly array of numbers type

@@ -10,3 +10,11 @@ function wait(duration: number): Promise<string> {
 wait(100).then((res) => {
   console.log(res.length);
 });
+
+// write an async function. Create a type of the value that function returns
+
+async function getData() {
+  return 4;
+}
+
+type AwaitedData = Awaited<ReturnType<typeof wait>>;
